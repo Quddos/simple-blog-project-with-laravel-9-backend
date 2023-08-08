@@ -12,6 +12,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::view('/', 'index');
-Route::view('/about', 'about');
-Route::view('/contact', 'contact');
+Route::view('/', 'index')->name('home');
+Route::view('/about', 'about')->name('about');
+Route::view('/contact', 'contact')->name('contact');
